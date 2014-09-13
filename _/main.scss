@@ -1,1 +1,107 @@
 @import 'normalize';
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.scene, .layer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.layer.unselectable {
+    pointer-events: none;
+}
+
+.background {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+
+    background: #002b43 url('background.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.moon {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    bottom: 35%;
+
+    background: url('moon.png') no-repeat 50% 50%;
+    background-size: contain;
+    max-height: 740px;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 6.25%;
+
+    font-family: 'Economica', 'Avenir Next Condensed', 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+        line-height: 1.33;
+    }
+
+    h1 {
+        font-size: 6rem;
+        color: #2c3e50;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    em {
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    a {
+        color: #2c3e50;
+        text-decoration: none;
+        border-bottom: 2px #2c3e50 solid;
+    }
+
+    em, a:hover {
+        color: #2a638a;
+    }
+}
+
+.library {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    bottom: -5%;
+
+    background: url('library.png') no-repeat 50% 100%;
+    background-size: contain;
+}
+
+.ninja {
+    position: absolute;
+    width: 55px;
+    height: 66px;
+    left: 62.5%;
+    top: 32.5%;
+
+    background: url('ninja.png') no-repeat 50% 50%;
+    background-size: contain;
+}

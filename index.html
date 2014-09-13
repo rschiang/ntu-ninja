@@ -2,14 +2,52 @@
 <html>
 <head>
     <meta charset="utf-8">
+
+    <title>NTU.ninja</title>
+
+
+    <meta property="author" content="Poren Chiang">
+    <meta property="description" content="Where open source ninjas reside.">
+    <meta property="keywords" content="NTU,NTUOSC,open source,free software,ninja">
+
     <meta property="og:title" content="NTU.ninja">
+    <meta property="og:site_name" content="NTU.ninja">
+    <meta property="og:type" content="website">
     <meta property="og:description" content="Where open source ninjas reside.">
     <meta property="og:image" content="http://ntu.ninja/_/thumbnail.png">
+
+    <link rel="shortcut icon" type="image/png" href="/_/favicon.png">
     <link rel="stylesheet" type="text/css" href="/_/main.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:400,700">
-    <title>NTU.ninja</title>
 </head>
 <body>
-    <h1>NTU.ninja</h1>
+    <div class="container">
+        <ul id="scene" class="scene">
+            <li class="layer unselectable" data-depth="0.1">
+                <div class="background"></div>
+            </li>
+            <li class="layer unselectable" data-depth="0.15">
+                <div class="moon"></div>
+            </li>
+            <li class="layer" data-depth="0.2">
+                <header>
+                    <h1 class="title">NTU<em>.ninja</em></h1>
+                    <h2 class="subtitle">Powered by <a href="http://ntuosc.org">NTUOSC</a></h2>
+                </header>
+            </li>
+            <li class="layer unselectable" data-depth="0.3">
+                <div class="ninja"></div>
+            </li>
+            <li class="layer unselectable" data-depth="0.4">
+                <div class="library"></div>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="_/vendor/parallax.min.js"></script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
 </body>
 </html>
